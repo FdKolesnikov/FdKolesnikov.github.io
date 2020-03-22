@@ -1,0 +1,94 @@
+.hero
+    position: relative
+    background: $dark url('../img/image-bg.png') no-repeat center / cover
+    height: 100vh
+    color: $light
+    padding-top: 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.7)
+        top: 0
+        left: 0
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 3.46rem
+        background: $dark
+
+    &__content
+        max-width: 47.85rem
+        position: relative
+        margin-left: 4.28rem
+    &__text
+        font-size: 1.57rem
+        max-width: 500px
+    &__button
+        margin-right: 20px
+
+    &__scroll-down
+        position: absolute
+        z-index: 3
+        left: 0
+        bottom: 0
+        min-width: 247px
+        min-height: 97px
+        background-color: $dark
+        display: flex
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        text-decoration: none
+        color: $light
+        &::after
+            content: ''
+            background: url('../img/arrow-down.svg') no-repeat center
+            width: 30px
+            height: 30px
+            border: solid 2px $primary
+            border-radius: 50%
+            margin-left: 12px
+
+
+    &__instagram
+        position: absolute
+        left: 0
+        top: 0
+        max-width: 80px
+        height: 100vh
+.instagram
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $dark
+    &__link
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        color: $primary
+        text-decoration: none
+        transform: rotate(90deg)
+        line-height: 0.8
+        &::after
+            content: ''
+            width: 59px
+            height: 1px
+            background-color: $primary
+            margin-left: 8px
+.title
+    margin: 0
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    text-transform: uppercase
+    font-size: 2.857rem
+    &--primary
+        color: $primary
